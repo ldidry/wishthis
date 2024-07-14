@@ -6,6 +6,7 @@
 function getCookieDomain(): string
 {
     $cookieDomain = $_SERVER['HTTP_HOST'];
+    return $cookieDomain;
 
     if (defined('CHANNELS') && is_iterable(CHANNELS) && defined('ENV_IS_DEV') && ! ENV_IS_DEV && '127.0.0.1' !== $_SERVER['REMOTE_ADDR']) {
         foreach (CHANNELS as $channel) {
