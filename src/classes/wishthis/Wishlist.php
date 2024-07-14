@@ -125,7 +125,7 @@ class Wishlist
         $FROM      = isset($options['FROM'])      ? $options['FROM']      : Wish::FROM;
         $LEFT_JOIN = isset($options['LEFT_JOIN']) ? $options['LEFT_JOIN'] : Wish::LEFT_JOIN;
         $WHERE     = isset($options['WHERE'])     ? $options['WHERE']     : '`wishlist` = :wishlist_id';
-        $ORDER_BY  = isset($options['ORDER_BY'])  ? $options['ORDER_BY']  : '`priority` DESC, `url` ASC, `title` ASC';
+        $ORDER_BY  = isset($options['ORDER_BY'])  ? $options['ORDER_BY']  : '`priority` DESC, `title` ASC, `url` ASC';
 
         /** Default to showing available wishes */
         $wish_status = ' AND (
