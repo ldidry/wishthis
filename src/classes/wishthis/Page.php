@@ -444,7 +444,7 @@ class Page
         $register  = Navigation::Register->value;
 
         $pages = [
-            $blog    => [
+            /*$blog    => [
                 'text'      => __('Blog'),
                 'alignment' => 'left',
                 'items'     => [
@@ -454,7 +454,7 @@ class Page
                         'icon' => 'rss',
                     ],
                 ],
-            ],
+            ],*/
             $system  => [
                 'text'      => __('System'),
                 'icon'      => 'wrench',
